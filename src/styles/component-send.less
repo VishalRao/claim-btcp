@@ -51,6 +51,7 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 
         p {
+            position: relative;
             padding-bottom: 25px;
             &:first-child {
                 padding-bottom: 4px;
@@ -90,6 +91,70 @@
 
         #address {
             width: 550px;
+        }
+
+        .address-dropdown {
+            position: absolute;
+            z-index: 100;
+            left: 0;
+            top: 24px;
+            border: 1px solid @color_border_grey;
+            border-top: 0px;
+            background: @color_white;
+            box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.25);
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+
+            div {
+                cursor: pointer;
+                padding: 5px 10px;
+                text-transform: capitalize;
+                &:hover {
+                    color: @color_green;
+                    background: @color_content;
+                }
+            }
+        }
+
+        // eye button
+        .verify-address-button {
+            display: block;
+            position: absolute;
+            font-size: 12px;
+            color: @color_hint_grey;
+            top: 11px;
+            right: -5px;
+            z-index: 2;
+            cursor: pointer;
+            transition: color 0.4s;
+            &:before {
+                .glyphicon-eye-open;
+                width: 20px;
+                height: 15px;
+            }
+
+            .verify-address-tooltip {
+                position: absolute;
+                display: none;
+                z-index: 1;
+                left: -40px;
+                top: 20px;
+                width: 100px;
+                background-color: rgba(0, 0, 0, 0.7);
+                font-size: 1em;
+                color: @color_white;
+                border-radius: 6px;
+                padding: 10px;
+                text-align: center;
+            }
+
+            &:hover {
+                color: @color_green;
+                .verify-address-tooltip {
+                    display: block;
+                }
+            }
         }
 
         span {
@@ -139,6 +204,7 @@
             &.amount-hint {
                 position: relative;
                 display: none;
+                color: @color_orange;
                 &:before {
                     .glyphicon-info;
                     vertical-align: -2px;
@@ -186,6 +252,10 @@
                     .glyphicon-trezor;
                 }
             }
+
+            .address-hint {
+                text-transform: capitalize;
+            }
         }
 
         // without using predefined TREZOR accounts
@@ -221,6 +291,10 @@
                     .glyphicon-checkmark;
                     padding-right: 18px;
                 }
+            }
+
+            .verify-address-button {
+                display: none;
             }
 
             &.empty {

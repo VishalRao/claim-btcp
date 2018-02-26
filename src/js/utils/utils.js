@@ -37,20 +37,22 @@ export function getSerializedPath(path: Array<number>): string {
     }).join('/');
 }
 
-export function getBitcoinCashPathFromIndex(index: number): Array<number> {
-    return [
-        (44 | HD_HARDENED) >>> 0,
-        (145 | HD_HARDENED) >>> 0,
-        (index | HD_HARDENED) >>> 0
-    ];
-}
-
-export function isBitcoinCashAccount(bchAccounts, usedBchAccounts, address): boolean {
-    let accounts = [...bchAccounts, ...usedBchAccounts];
+export function isTrezorAccount(trezorAccounts, usedAccounts, address): boolean {
+    let accounts = [...trezorAccounts, ...usedAccounts];
     for(let account of accounts) {
         if(account.address === address) {
             return true;
         }
     }
     return false;
+}
+
+export function trezorAccountLabel(trezorAccounts, address): string {
+    let accounts = [...trezorAccounts];
+    for(let account of accounts) {
+        if(account.address === address) {
+            return account.name;
+        }
+    }
+    return "Account";
 }
