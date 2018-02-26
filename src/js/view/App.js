@@ -23,14 +23,6 @@ export default class App extends Component {
             activeAccount: 0,
             //...data
         };
-
-        // getSplitBlock().then(json => {
-        //     this.setState({
-        //         block: json.block,
-        //         useTrezorAccounts: json.useBchAccounts,
-        //         bitcoreApiUrl: 'https://btc-bitcore1.trezor.io/'
-        //     });
-        // })
     }
 
     getAccounts(origin, destination): void {

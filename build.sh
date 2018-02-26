@@ -17,10 +17,5 @@ cp -aR $CONNECT/popup/js $DIST/popup/js
 cp -aR $CONNECT/popup/img $DIST/popup/img
 cp -aR $CONNECT/popup/config_signed.bin $DIST/popup/config_signed.bin
 
-printf "\n-- COPYING FILES ----------------------\n"
-
-cd $DIST
-rsync -avz --delete -e ssh . admin@dev.sldev.cz:~/experiments/www
-cd ../
 
 printf "\n-- COMPLETE ---------------------------\n"
