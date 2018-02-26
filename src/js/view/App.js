@@ -23,9 +23,8 @@ export default class App extends Component {
     getAccounts(): void {
 
         TrezorConnect.setAccountDiscoveryLimit(30);
-        // TrezorConnect.setBitcoreURLS(this.state.bitcoreApiUrl);
-        TrezorConnect.closeAfterSuccess(false);
-        TrezorConnect.closeAfterFailure(false);
+        // TrezorConnect.closeAfterSuccess(false);
+        // TrezorConnect.closeAfterFailure(false);
 
         const destination = { id: "btc1", name: "Legacy account", simpleName: "bitcoin legacy", short: "BTC", txType: "Bitcoin", bip44: [44, 0], addressVersion: 0, bitcore: ['https://btc-bitcore1.trezor.io/', 'https://btc-bitcore3.trezor.io/'] };
         const origin = { id: "bch1", name: "bitcoin cash, 1-address", simpleName: "bitcoin cash", short: "BCH", txType: "Bcash", bip44: [44, 145], addressVersion: 0, bitcore: ['https://bch-bitcore2.trezor.io/'] };
