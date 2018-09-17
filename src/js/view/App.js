@@ -258,12 +258,14 @@ export default class App extends Component {
 
                     // update fresh address
                     let currentTrezorAccount = this.findTrezorAccountByAddress(address);
-                    if (currentTrezorAccount.addressIndex + 1 < currentTrezorAccount.unusedAddresses.length) {
-                        currentTrezorAccount.addressIndex++;
-                        currentTrezorAccount.usedAddressIndex++;
+                    if (currentTrezorAccount) {
+                        if (currentTrezorAccount.addressIndex + 1 < currentTrezorAccount.unusedAddresses.length) {
+                            currentTrezorAccount.addressIndex++;
+                            currentTrezorAccount.usedAddressIndex++;
+                        }
+                        currentTrezorAccount.address = currentTrezorAccount.unusedAddresses[ currentTrezorAccount.addressIndex ];
+                        currentTrezorAccount.path = currentTrezorAccount.basePath.concat([0, currentTrezorAccount.usedAddressIndex]);
                     }
-                    currentTrezorAccount.address = currentTrezorAccount.unusedAddresses[ currentTrezorAccount.addressIndex ];
-                    currentTrezorAccount.path = currentTrezorAccount.basePath.concat([0, currentTrezorAccount.usedAddressIndex]);
 
                     // store tx in local storage
                     // window.localStorage.setItem(account.address, hashHex);
