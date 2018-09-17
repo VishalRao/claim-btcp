@@ -10,15 +10,15 @@ const initalState = {
 };
 
 const accounts = [
-    { id: "btc1", name: "Legacy account", simpleName: "bitcoin legacy", short: "BTC", txType: "Bitcoin", bip44: [44, 0], addressVersion: 0, bitcore: ['https://btc-bitcore1.trezor.io/', 'https://btc-bitcore3.trezor.io/'] },
-    { id: "btc3", name: "Standard account", simpleName: "bitcoin", short: "BTC", txType: "Bitcoin", bip44: [49, 0], addressVersion: 5, bitcore: ['https://btc-bitcore1.trezor.io/', 'https://btc-bitcore3.trezor.io/'] },
+    { id: "btc1", name: "Legacy account", simpleName: "bitcoin legacy", short: "BTC", txType: "Bitcoin", bip44: [44, 0], addressVersion: 0, bitcore: ['https://btc1.trezor.io', 'https://btc2.trezor.io', 'https://btc3.trezor.io', 'https://btc4.trezor.io', 'https://btc5.trezor.io'] },
+    { id: "btc3", name: "Standard account", simpleName: "bitcoin", short: "BTC", txType: "Bitcoin", bip44: [49, 0], addressVersion: 5, bitcore: ['https://btc1.trezor.io', 'https://btc2.trezor.io', 'https://btc3.trezor.io', 'https://btc4.trezor.io', 'https://btc5.trezor.io'] },
     // { id: "btcX", name: "bitcoin, wrongly generated 1-address (XPUB)", simpleName: "bitcoin", short: "BTC", txType: "Bitcoin", bip44: [49, 0], addressVersion: 0, bitcore: ['https://btc-bitcore1.trezor.io/', 'https://btc-bitcore3.trezor.io/'] },
     // { id: "btcM", name: "bitcoin, M-address", simpleName: "bitcoin", short: "BTC", txType: "Bitcoin", bip44: [49, 0], addressVersion: 5, bitcore: ['https://btc-bitcore1.trezor.io/', 'https://btc-bitcore3.trezor.io/'] },
     // { id: "bch1", name: "bitcoin cash, 1-address", simpleName: "bitcoin cash", short: "BCH", txType: "Bcash", bip44: [44, 145], addressVersion: 0, bitcore: ['https://bch-bitcore2.trezor.io/'] },
     // { id: "ltc3", name: "litecoin, 3-address", simpleName: "litecoin", short: "LTC", txType: "Litecoin", bip44: [49, 2], addressVersion: 50, bitcore: ['https://ltc-bitcore1.trezor.io/', 'https://ltc-bitcore3.trezor.io/'] },
     
-    { id: "btg1", name: "bitcoin gold legacy", simpleName: "bitcoin gold", short: "BTG", txType: "Bitcoin Gold", bip44: [49, 156], addressVersion: 5, bitcore: ['https://btg-bitcore2.trezor.io/'] },
-    { id: "btg3", name: "bitcoin gold", simpleName: "bitcoin gold", short: "BTG", txType: "Bitcoin Gold", bip44: [44, 156], addressVersion: 5, bitcore: ['https://btg-bitcore2.trezor.io/'] },
+    { id: "btg1", name: "bitcoin gold legacy", simpleName: "bitcoin gold", short: "BTG", txType: "Bitcoin Gold", bip44: [49, 156], addressVersion: 5, bitcore: ['https://btg1.trezor.io', 'https://btg2.trezor.io', 'https://btg3.trezor.io', 'https://btg4.trezor.io', 'https://btg5.trezor.io'] },
+    { id: "btg3", name: "bitcoin gold", simpleName: "bitcoin gold", short: "BTG", txType: "Bitcoin Gold", bip44: [44, 156], addressVersion: 5, bitcore: ['https://btg1.trezor.io', 'https://btg2.trezor.io', 'https://btg3.trezor.io', 'https://btg4.trezor.io', 'https://btg5.trezor.io'] },
     
     //{ id: "btc2x1", name: "bitcoin2x, 1-address", simpleName: "bitcoin2x", short: "BTC", txType: "Bitcoin", bip44: [49, 0], addressVersion: 5, bitcore: ['https://btc-bitcore1.trezor.io/', 'https://btc-bitcore3.trezor.io/'] },
     //{ id: "btc2x3", name: "bitcoin2x, 3-address", simpleName: "bitcoin2x", short: "BTC", txType: "Bitcoin", bip44: [49, 0], addressVersion: 5, bitcore: ['https://btc-bitcore1.trezor.io/', 'https://btc-bitcore3.trezor.io/'] },
