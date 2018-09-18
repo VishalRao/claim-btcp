@@ -13,10 +13,11 @@ _Please note, this work has not been sanctioned or financially supported by Sato
 
 No bounty is required by donations are appreciated:
 
-|| Currency || Address ||
-|Bitcoin (BTC) |
-|Bitcoin Private (BTCP) | |
-|Bitcoin Cash (BCH) | |
-|Bitcoin Gold (BTG) | | 
-|Litecoin (LTC): | |
-|Ethereum (ETH): | 0x6239D3fb0905965c2D0BaD8C42C4786444F46fc6 |
+ Currency | Address 
+ ---------| --------
+Bitcoin (BTC) |
+Bitcoin Private (BTCP) | 
+Bitcoin Cash (BCH) | 
+Bitcoin Gold (BTG) |
+Litecoin (LTC): | 
+Ethereum (ETH): | 0x6239D3fb0905965c2D0BaD8C42C4786444F46fc6
