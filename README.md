@@ -3,9 +3,9 @@
 This is a claim tool to help holders of Bitcoin (BTC) claim their Bitcoin Private (BTCP).
 It is similar to the successful claim tools for
 * Bitcoin Cash 
-** https://trezor.io/claim-bch/
+  * https://trezor.io/claim-bch/
 * Bitcoin Gold 
-* https://trezor.io/claim-btg/
+  *  https://trezor.io/claim-btg/
 
 
 
