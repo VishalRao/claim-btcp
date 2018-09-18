@@ -11,7 +11,7 @@ It is similar to the successful claim tools for
 
 _Please note, this work has not been sanctioned or financially supported by Satoshi Labs, creators of the Trezor One and Trezor Model T_
 
-No bounty is required by donations are appreciated:
+No bounty is required...but donations are appreciated:
 
  Currency | Address 
  ---------| --------
@@ -21,3 +21,7 @@ Bitcoin Cash (BCH) |
 Bitcoin Gold (BTG) |
 Litecoin (LTC): | 
 Ethereum (ETH): | 0x6239D3fb0905965c2D0BaD8C42C4786444F46fc6
+
+
+
+Enjoy your Bitcoin Private!
